@@ -17,7 +17,29 @@ Licenc: GNU GPL
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container bg-info p-3 mt-5 rounded border border-4">
+        <h1>Átlag fogyasztás kiszámítása</h1>
+        <div class="fogyForm">
+            <div class="mt-3">
+                <input type="text" placeholder="Induló kilóméteróra állás" class="form-control" id="kmnyit">
+            </div>
+            <div class="mt-3">
+                <input type="text" placeholder="Következő tankolás mennyisége" class="form-control" id="tankol">
+            </div>
+            <div class="mt-3">
+                <input type="text" placeholder="Záró kilóméteróra állás" class="form-control" id="kmzar">
+            </div>
+            <button class="btn btn-primary mt-3" id="calcButton">Számít</button>
+            <div class="mt-3">
+                <label class="form-label" for="ac">Átlagfogyasztás</label>
+                <input type="text" readonly class="form-control" id="ac">
+            </div>
+        </div>
+
+    </div>
+    <div class="mt-3 text-center ab" id="about">
+        Kurucz János, 2023-02-04
+    </div>
     <script src="app.js"></script>
 </body>
 </html>

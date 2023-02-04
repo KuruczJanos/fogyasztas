@@ -7,3 +7,10 @@
 * Github: https://github.com/KuruczJanos/fogyasztas.git
 * Licenc: GNU GPL
 */
+body{
+    background-color: silver;
+}
+#about{
+    font-size:x-large;
+    color:black
+}
