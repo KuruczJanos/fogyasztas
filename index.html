@@ -1,0 +1,86 @@
+<!--
+File: index.html
+Author: Kurucz János
+Copyright: 2023, Kurucz János
+Group: Szoft 1/I/E
+Date: 2023-02-04
+Github: https://github.com/KuruczJanos/fogyasztas.git
+Licenc: GNU GPL
+-->
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fogyasztás</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/ico" href="./favicon_io/favicon.ico">
+    </head>
+<body>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    <div class="container bg-info p-3 mt-5 rounded border border-4 atlagfogy">
+        <h1>Átlag fogyasztás kiszámítása</h1>
+        <div class="fogyForm">
+            <div class="mt-3">
+                <input type="text" placeholder="Induló kilóméteróra állás" class="form-control" id="kmnyit">
+            </div>
+            <div class="mt-3">
+                <input type="text" placeholder="Következő tankolás mennyisége" class="form-control" id="tankol">
+            </div>
+            <div class="mt-3">
+                <input type="text" placeholder="Záró kilóméteróra állás" class="form-control" id="kmzar">
+            </div>
+            <button class="d-grid gap-2 col-6 mx-auto btn btn-success mt-3" id="calcButton">Számít</button>
+            <div class="mt-3">
+                <label class="form-label" for="ac">Átlagfogyasztás</label>
+                <input type="text" readonly class="form-control" id="ac">
+            </div>
+        </div>
+    </div>
+        <div class="container bg-info p-3 mt-5 rounded border border-4 terkup">
+            <h1 class="">Feladat 0301</h1>
+            <p>Egy kör alapú kúp térfogatának számítása a sugár és a magasság alapján</p>
+            <div class="kupFrom">
+                <div class="mt-3">
+                    <input type="text"placeholder="Sugár" class="form-control" id="radius">
+                </div>
+                <div class="mt-3">
+                    <input type="text"placeholder="Magasság" class="form-control" id="height">
+                </div>
+                <button class="btn btn-primary mt-3" id="calcButton1">Számít</button>
+                <div class="mt-3">
+                    <label class="form-label" for="area">Térfogat</label>
+                    <input type="text" readonly class="form-control" id="area">
+                </div>
+            </div>
+        
+        </div>  
+        <div class="container bg-info p-3 mt-5 rounded border border-4 gyepes">
+            <h1 class="">Feladat 0303</h1>
+            <p>Egy kör alapú telek gyepesítésének ára</p>
+            <div class="kupFrom">
+                <div class="mt-3">
+                    <input type="text"placeholder="Telek átmérő" class="form-control" id="atmero">
+                </div>
+                <button class="btn btn-primary mt-3" id="calcButton2">Számít</button>
+                <div class="mt-3">
+                    <label class="form-label" for="area1">Négyzetméter</label>
+                    <input type="text" readonly class="form-control" id="area1">
+                </div>
+                <div class="mt-3">
+                    <label class="form-label" for="price">Költség</label>
+                    <input type="text" readonly class="form-control" id="price">
+                </div>
+            </div>
+        
+        </div>     
+    <div class="mt-3 text-center ab" id="about">
+        Kurucz János, 2023-02-04
+    </div>
+    <script root="app.js"></script>
+</body>
+</html>
