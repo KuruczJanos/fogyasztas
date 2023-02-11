@@ -15,8 +15,13 @@ Licenc: GNU GPL
     <title>Fogyasztás</title>
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="icon" type="image/ico" href="./favicon_io/favicon.ico">
+    </head>
 <body>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
     <div class="container bg-info p-3 mt-5 rounded border border-4 atlagfogy">
         <h1>Átlag fogyasztás kiszámítása</h1>
         <div class="fogyForm">
@@ -29,7 +34,7 @@ Licenc: GNU GPL
             <div class="mt-3">
                 <input type="text" placeholder="Záró kilóméteróra állás" class="form-control" id="kmzar">
             </div>
-            <button class="btn btn-primary mt-3" id="calcButton">Számít</button>
+            <button class="d-grid gap-2 col-6 mx-auto btn btn-success mt-3" id="calcButton">Számít</button>
             <div class="mt-3">
                 <label class="form-label" for="ac">Átlagfogyasztás</label>
                 <input type="text" readonly class="form-control" id="ac">
@@ -76,6 +81,6 @@ Licenc: GNU GPL
     <div class="mt-3 text-center ab" id="about">
         Kurucz János, 2023-02-04
     </div>
-    <script src="app.js"></script>
+    <script root="app.js"></script>
 </body>
 </html>
